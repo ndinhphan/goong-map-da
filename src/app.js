@@ -52,9 +52,7 @@ export default function App() {
     // console.log(hoverInfo);
   }, []);
 
-  const data = useMemo(() => {
-    return allData && updatePercentiles(allData, (f) => f);
-  }, [allData, year]);
+  const data = allData;
 
   return (
     <>
